@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+/* Only animate spans inside h1 */
+h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+h1 span {
+    font-size: 100px;
+    font-family: 'Arial';
+    text-transform: uppercase;
+    display: inline-block;
+    transform: rotateY(0deg);
+    transition: 0.5s;
+    animation: bounce 0.4s ease infinite alternate;
+    position: relative; /* Added this to allow 'top' property */
+}
+
+/* Delay effect for each letter */
+h1 span:nth-child(1) { animation-delay: 0.2s; }
+h1 span:nth-child(2) { animation-delay: 0.4s; }
+h1 span:nth-child(3) { animation-delay: 0.6s; }
+h1 span:nth-child(4) { animation-delay: 0.2s; }
+h1 span:nth-child(5) { animation-delay: 0.4s; }
+h1 span:nth-child(6) { animation-delay: 0.6s; }
+h1 span:nth-child(7) { animation-delay: 0.8s; }
+
+@keyframes bounce {
+    100% {
+        top: -20px; 
+        text-shadow: 0 1px 0 #b3b3b3,
+                     0 2px 0 #8d8d8d,
+                     0 3px 0 #757575,
+                     0 4px 0 #757575,
+                     0 5px 0 #555555,
+                     0 6px 0 #4b4b4b,
+                     0 7px 0 #424242,
+                     0 8px 0 #222222;
+    }
+}
+.bg-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.thanks{
+    font-size: 100px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p{
+    padding: 20px, 20px, 20px, 20px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+h2 button{
+    font-size: large;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(26, 124, 64);
+}
+h2 button a{
+    text-decoration: none;
+    color: azure;
+}
+.contacts{
+    padding-top: 50px;
+}
